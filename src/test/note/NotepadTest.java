@@ -28,8 +28,8 @@ public class NotepadTest {
     public void deleteTest() {
         notepad.add("String");
         notepad.add("Thing");
-        notepad.delete(1);
-        assertEquals("String", notepad.getNote()[notepad.getNote().length - 5].getNote());
+        notepad.delete(0);
+        assertEquals("Thing", notepad.getNote()[notepad.getNote().length - 5].getNote());
     }
 
     @Test
@@ -43,6 +43,7 @@ public class NotepadTest {
 
     @Test
     public void editNotepadTest() {
+        notepad.add("Thing");
         notepad.edit(0, "String");
         assertEquals(notepad.getNote()[0].getNote(), "String");
     }

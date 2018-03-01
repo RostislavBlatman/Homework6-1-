@@ -2,6 +2,7 @@ package test;
 
 import main.note.Note;
 
+import main.validator.Validator;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

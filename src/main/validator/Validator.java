@@ -1,4 +1,4 @@
-package test;
+package main.validator;
 
 import main.note.Note;
 
