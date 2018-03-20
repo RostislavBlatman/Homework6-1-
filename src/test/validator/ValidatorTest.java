@@ -1,4 +1,4 @@
-package test;
+package test.validator;
 
 import main.note.Note;
 
@@ -12,8 +12,8 @@ public class ValidatorTest {
     public void validatorForEmptyNoteShouldReturn1(){
         Note[] note = new Note[1];
         note[note.length-1] = new Note();
-        int a = Validator.empty(note);
-        assertEquals(1, a);
+        boolean a = Validator.empty(note);
+        assertEquals(true, a);
     }
 
 }

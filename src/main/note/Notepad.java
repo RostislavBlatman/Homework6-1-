@@ -48,7 +48,7 @@ public class Notepad {
     public void delete(int line) {
 
         Validator.index(line, note.length - 1);
-        if (Validator.empty(note) == 1) {
+        if (Validator.empty(note) == true) {
             System.out.println("Notepad is empty! Let's add something");
         } else {
             counter--;
@@ -79,7 +79,7 @@ public class Notepad {
     }
 
     public void showAll() {
-        if (Validator.empty(note) != 1) {
+        if (Validator.empty(note) != true) {
 
             System.out.println("My notepad: ");
             for (int noteIndex = 0; noteIndex < counter; noteIndex++) {
